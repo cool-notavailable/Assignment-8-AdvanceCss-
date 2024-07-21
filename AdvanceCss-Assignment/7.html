@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .container {
+        border: 2px solid black;
+        height: 40vh;
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        position: absolute;
+        height: 60px;
+        width: 30%;
+        border-radius: 10px;
+        border: none;
+        background-image: linear-gradient(to right, #004cffe7, #5d0093);
+        animation: move 1s ease-in-out infinite alternate;
+      }
+      @keyframes move {
+        from {
+          top: 20%;
+          animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+        to {
+          top: 25%;
+          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+      }
+      button:hover {
+        background-image: linear-gradient(to right, #ff0033df, #ff01d9);
+      }
+      button a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button>
+        <a href="https://learn.pwskills.com/">Click Me To Visit PW Skills.</a>
+      </button>
+    </div>
+  </body>
+</html>

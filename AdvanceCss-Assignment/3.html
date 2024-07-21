@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforming</title>
+    <style>
+        .container{
+           position:absolute;
+           top:20%;
+           left:40%;
+            border:2px solid black;
+            height:55vh;
+            width:40vw;
+            background-image:linear-gradient(to right, #007bffa2,#001aff);
+            font-family:sans-serif;
+            border-radius:15px;
+            transition-duration:.6s;
+        }
+        .container:hover{
+            transform:rotate(-40deg);
+            
+        }
+        .heading{
+            margin-top:20px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+        .heading h1{
+            padding-left:30px;
+            font-size:2.5rem;
+        }
+        .heading h2{
+            color:#fff;
+            padding-right:20px;
+
+        }
+        .main{
+            padding-left:30px;
+        }
+        .main h3{
+            font-size:1.7rem;
+        }
+        ul{
+            padding-left:80px;
+            font-weight:500;
+        }
+        li{
+            padding-bottom:5px;
+        }
+        button{
+            margin-top:20px;
+            position:relative;
+            right:10%;
+           background-image:linear-gradient(to right,#06ff40de,#008000de);
+            height:40px;
+            width:30vw;
+            color:black;
+            font-size:1.2rem;
+            font-weight:600;
+            border-radius:10px;
+            border:none;
+
+        }
+        button:hover{
+            background-image: linear-gradient(#ff06ff,purple);
+            color:#fff;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="heading">
+        <h1>#01</h1>
+        <h2>Created on : 01/01/2023</h1>
+    </div>
+    <div class="main">
+        <h3>Important dates</h3>
+        <ul>
+            <li>January 26 - Republic Day</li>
+            <li>August 15 - Independence Day</li>
+            <li>October 2 - Gandhi Jayanti</li>
+            <li>August 29 - National Sports Day</li>
+        </ol>
+        <button>Mark As Done</button>
+    </div>
+   </div>
+</body>
+</html>
